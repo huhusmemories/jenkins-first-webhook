@@ -9,5 +9,11 @@ pipeline {
                 sh "python pipeline.py"
 		}
             }
+        stage("deployment"){
+             steps {
+                 sh "echo deployment stage has been completed"
+                 sh "echo good bye"
+                 }
+	    }
 	}
 }
