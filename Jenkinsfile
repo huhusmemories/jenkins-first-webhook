@@ -5,8 +5,8 @@ pipeline {
 	    steps{
 	        sh "echo Integrating Jenkins pipeline with github webhook using jenkinsfile"
                 sh "ls"
-                sh "python --version"
-                sh "python pipeline.py"
+                sh "python3 --version"
+                sh "python3 pipeline.py"
 		}
             }
 	}
